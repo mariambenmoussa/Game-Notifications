@@ -22,7 +22,7 @@ NBA API is used to provide users with up-to-date game information (sportsdata.io
 
 ## Deployment instructions
 
-For security reasons and to protect sensitive data, some variables used on terraform are initiated in the CLI command (email@ for the SNS subscription, aws account ID, NBA API key)  
+For security reasons and to protect sensitive data, some variables used in terraform are initialized in the CLI command (e.g., email@ for the SNS subscription, AWS account ID, NBA API key)  
 Run the following commands:  
 
 ```
@@ -31,4 +31,11 @@ cd Game-Notifications/terraform/
 terraform init  
 terraform plan -var "myemail=your_email_address" -var "awsaccountid=your_aws_account_id" -var "NBA_API_KEY=your_nba_api_key"  
 terraform apply -var "myemail=your_email_address" -var "awsaccountid=your_aws_account_id" -var "NBA_API_KEY=your_nba_api_key"  
+```
+
+## Cleaning the Setup  
+
+To delete all the resources created previously, run the terraform destroy command :   
+```  
+terraform destroy -var "myemail=your_email_address" -var "awsaccountid=your_aws_account_id" -var "NBA_API_KEY=your_nba_api_key"  
 ```
