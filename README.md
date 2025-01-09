@@ -17,7 +17,7 @@ NBA API is used to provide users with up-to-date game information (sportsdata.io
 
 ## Architecture 
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/8db27e00-1fbe-4671-bad7-18b56f033917)
 
 
 ## Deployment instructions
